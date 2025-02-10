@@ -46,9 +46,10 @@ This project provides a cutting-edge solo mining pool for Scrypt-based coins, op
    cd Low-Difficulty-Solo-Mining-Pool-for-NerdMiner-v2-Scrypt-and-TheMinerzCoin
 	```
 2. **Run the Installation Script (do not run as root):**
-   ```bash install.sh
    ```
-   The script will:
+   bash install.sh
+   ```
+- ** The script will:
 
   -  Update the system and install dependencies.
   -  Set up a Python virtual environment and install Python packages.
