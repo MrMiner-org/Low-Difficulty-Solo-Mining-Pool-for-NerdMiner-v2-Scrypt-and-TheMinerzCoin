@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}NerdMiner Pool Dashboard{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% if session.get('dark_mode') %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark_mode.css') }}">
+    {% endif %}
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NerdMiner Pool Dashboard</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a> |
+            <a href="{{ url_for('stats') }}">Statistics</a> |
+            <a href="{{ url_for('leaderboard') }}">Leaderboard</a> |
+            <a href="{{ url_for('admin') }}">Admin</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 TheMinerzCoin NerdMiner Pool</p>
+    </footer>
+</body>
+</html>

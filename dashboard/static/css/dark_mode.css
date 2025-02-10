@@ -1,0 +1,12 @@
+body {
+    background-color: #222;
+    color: #ddd;
+}
+
+header, footer {
+    background-color: #000;
+}
+
+nav a {
+    color: #ddd;
+}

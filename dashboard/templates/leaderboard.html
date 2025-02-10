@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Leaderboard{% endblock %}
+{% block content %}
+<section>
+    <h2>Leaderboard</h2>
+    <ol>
+        {% for rank, miner in leaderboard.items() %}
+        <li>Rank {{ rank }}: {{ miner.username }} - Shares: {{ miner.shares }}, Rewards: {{ miner.rewards }} TMC</li>
+        {% endfor %}
+    </ol>
+</section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Pool Statistics{% endblock %}
+{% block content %}
+<section>
+    <h2>Pool Statistics</h2>
+    <ul>
+        <li>Active Miners: {{ stats.active_miners }}</li>
+        <li>Total Blocks Found: {{ stats.total_blocks }}</li>
+        <li>Network Hashrate: {{ stats.network_hashrate }}</li>
+    </ul>
+</section>
+{% endblock %}
