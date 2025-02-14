@@ -47,7 +47,7 @@ This project provides a cutting-edge solo mining pool for Scrypt-based coins, op
 	```
 2. **Run the Installation Script (do not run as root):**
    ```
-   bash install.sh
+   ./install.sh
    ```
 - ** The script will:
 
